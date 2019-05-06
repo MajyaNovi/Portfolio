@@ -1,0 +1,453 @@
+* {padding: 0; margin: 0; font-family: 'Heebo', sans-serif; font-family: 'Roboto', sans-serif;}
+
+/* ##################################################################### */
+
+.conteiner-1 {/* ПЕРВЫЙ БОЛЬШОЙ БЛОК */
+	padding:20px 120px;  
+	height:100vh; /* блок занимает всю высоту окна браузера */
+	background:linear-gradient(135deg, rgba(32,124,229,0.6) 0%, rgba(27,107,181,0.6) 90%, rgba(27,107,181,0.6) 100%), url(../image/main-bg.jpg); /* градиент создан в конструкторе градиентов */
+	background-repeat:no-repeat;
+	background-size:cover; /* картинка заполняет собой весь указанный блок */
+	border-radius: 0px 0px 0px 300px; /* закругление, тоже можно взять в конструкторе градиентов */
+}
+
+.menu1 ul {/* верхнее меню */
+	display:flex; /* подключаем флексы */
+	padding:20px; 
+	margin:-40px;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content:flex-end; /* выравнивание по правой стороне */
+}
+	
+.menu1 ul li 
+	{list-style:none; 
+	justify-content:space-between; /* отображается с одинаковыми отступами между ними */
+	margin:40px;}
+	
+.menu1 ul li a 
+	{color:#FFF; 
+	text-decoration:none; 
+	font-size:16px; 
+	font-weight:bold;}
+	
+.menu1 ul li a:hover{
+	color:#000;
+}
+
+.menu1 ul li a.bottom1{/* кнопка верхнего меню */
+	margin: 0 auto;
+	padding:10px;
+	display: block;
+	width:150px;
+	height:40px;
+	background:#00CC99;
+	border-radius:6px;
+	font-size:18px;
+	line-height:40px;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+}
+
+.menu1 ul li a.bottom1:hover{
+	color:#000;
+}
+
+.hero { /* блок с заголовком и видео */
+	display:flex;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content: space-between; /* отображается с одинаковыми отступами между ними */
+	height:80%;
+}
+
+.heroh1 h1 span{ 
+	text-transform:capitalize; /* все слова с большой буквы */
+}
+
+.heroh1 h1{
+	color:#fff;
+	font-size:50px;
+	line-height:70px;
+}
+
+.heroh1 p{
+	color:#fff;
+	font-size:18px;
+	padding:20px 0;
+	line-height:30px;
+}
+
+.heroh1 a.button2{/* вторая кнопка */
+	margin: 0 auto;
+	padding:10px;
+	display: inline-block;
+	width:250px;
+	height:40px;
+	background:#00CC99;
+	border-radius:6px;
+	font-size:18px;
+	line-height:40px;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+}
+
+.heroh1 a.button2:hover{
+	color:#000;
+}
+
+.video {/* блок с видео */
+	position:relative;
+	height:500px;
+	width:800px;
+}
+
+.video:before{
+	content:'';
+	position:absolute;
+	background:url(../image/dots_white.svg); /* декоративные точки */
+	height:224px;
+	width:207px;
+	top:-50px;
+	left:-50px;
+	z-index:0;
+}
+
+.video iframe {
+	position:relative;
+	z-index:9999;
+	width:100%;
+	height:100%;
+}
+
+/* ##################################################################### */
+
+hr.line {/* линия */
+	width:50px; 
+	text-align:center; 
+	margin:30px auto; 
+	color:#00CC99; 
+	border:3px solid #00CC99;
+}
+
+.conteiner-2{/* ВТОРОЙ БОЛЬШОЙ БЛОК */
+	padding:20px 120px;  
+	height:100vh; /* блок занимает всю высоту окна браузера */
+	background:#fff;	
+}
+
+.conteiner-2 h2 span{
+	text-transform:capitalize; /* все слова с большой буквы */
+}
+
+.conteiner-2 h2{
+	color:#003366;
+	font-size:50px;
+	line-height:70px;
+	text-align:center;
+}
+
+.conteiner-2 a.button3{/* третья кнопка */
+	margin: 0 auto;
+	padding:10px;
+	display: inline-block;
+	width:250px;
+	height:40px;
+	background:#3399FF;
+	border-radius:6px;
+	font-size:18px;
+	line-height:40px;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;	
+}
+
+.conteiner-2 a.button3:hover{
+	color:#000;
+}
+
+.fotoblock{/* блок с фото ноутбука посерединеи */
+	display:flex;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content:space-between; /* выравнивание по центру */
+	padding:25px;
+}
+
+.ftb{/* вложенные блочки */
+	width:600px;
+	background:#FFF;
+	padding:20px;
+}
+
+.ftb h3{
+	color:#333333;
+	font-size:20px;
+	font-weight:bold;
+	padding:20px;
+	text-align:center;
+	line-height:30px;
+}
+
+.ftb p{
+	color:#999999;
+	font-size:15px;
+	padding:10px;
+	text-align:center;
+	line-height:20px;
+}
+
+.ftb img{
+	text-align:center;
+}
+
+/* ##################################################################### */
+
+.conteiner-3 {/* ТРЕТИЙ БОЛЬШОЙ БЛОК */
+	padding:20px 120px;  
+	height:100vh; 
+	background:#fff;
+	background:linear-gradient(to bottom, rgba(246,246,246,1) 0%, rgba(255,255,255,0.9) 26%, rgba(237,237,237,0.6) 99%, rgba(237,237,237,0.6) 100%), url(../image/vector-dots-world-map-5.png); /* градиент создан в конструкторе градиентов */
+	background-repeat:no-repeat;
+	background-size:cover; /* картинка заполняет собой весь указанный блок */
+	border-radius: 300px 0px 0px 0px;
+}	
+
+.conteiner-3 h2 span{
+	text-transform:capitalize; /* все слова с большой буквы */
+}
+
+.conteiner-3 h2{
+	color:#003366;
+	font-size:50px;
+	line-height:70px;
+	text-align:center;
+}
+
+.block3 {/* блок с тремя блоками */
+	display:flex;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content:space-between; /* выравнивание по центру */
+	padding:60px;
+}
+
+.block{ /* для каждого блочка */
+
+	width:400px;
+	background:#FFF;
+	border:1px solid rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding:40px;
+	
+}
+
+.block:hover{
+	background-color:#EEE9E9;
+}
+
+.block h3{
+	color:#333333;
+	font-size:20px;
+	font-weight:bold;
+	padding:40px;
+	text-align:center;
+	line-height:30px;
+}
+
+.block p{
+	color:#999999;
+	font-size:15px;
+	padding:20px;
+	text-align:center;
+	line-height:20px;
+}
+
+/* ##################################################################### */
+
+
+.conteiner-4{/* ЧЕТВЕРТЫЙ БОЛЬШОЙ БЛОК */
+	height:100vh; /* блок занимает всю высоту окна браузера */
+	background:linear-gradient(135deg, rgba(32,124,229,0.6) 0%, rgba(27,107,181,0.6) 90%, rgba(27,107,181,0.6) 100%), url(../image/Bitcoins.jpg); /* градиент создан в конструкторе градиентов */
+	background-repeat:no-repeat;
+	background-size:cover; /* картинка заполняет собой весь указанный блок */
+}
+
+.conteiner-4 p.citata{/* цытата */
+	color:#fff;
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+}
+
+.conteiner-4 p.zvezda{/* звездочки */
+	color:#FFFF00;
+	font-size:25px;
+	text-align:center;
+	margin-top:10px;
+}
+
+.white{/* блок с диаграммами на белом фоне */
+	background-color:#fff;
+	border-radius: 0px 0px 300px 0px; /* закругление, тоже можно взять в конструкторе градиентов */
+	height:80%;
+	width:100%;
+}
+
+.vlozenie{/* вложенный блок */
+	padding:20px 120px;
+	display:flex;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content:space-between; /* выравнивание по центру */
+}
+
+.diagramma img.img1{/* верхняя диаграмма */
+	margin-left:160px;
+	padding-bottom:10px;
+	box-shadow: 8px 10px 25px -1px rgba(153,153,153,1);
+}
+
+.diagramma img.img2{/* нижняя диаграмма */
+	box-shadow: 8px 10px 21px 0px rgba(153,153,153,1);
+}
+
+hr.line2 {/* линия */
+	width:50px; 
+	text-align:left; 
+	margin:30px auto 30px 5px; 
+	color:#00CC99; 
+	border:3px solid #00CC99;
+}
+
+.textspisok h2{/* текст и список */
+	color:#003366;
+	font-size:50px;
+	line-height:70px;
+	text-align:left;
+}
+
+.textspisok p{
+	color:#999999;
+	font-size:20px;
+	padding:10px;
+	text-align:left;
+	line-height:30px;
+}
+
+.textspisok ul{padding-left:30px;}
+
+.textspisok ul li{
+	color:#999999;
+	font-size:20px;
+	padding:10px;
+	text-align:left;	
+}
+
+/* ##################################################################### */
+
+.conteiner-5{/* ПЯТЫЙ БОЛЬШОЙ БЛОК */
+	padding:20px 120px; 
+	height:100vh; /* блок занимает всю высоту окна браузера */
+	background-color:#fff;
+}
+
+.textforma{/* блочок с текстом и списоком */
+	display:flex;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content:space-between; /* выравнивание по центру */
+}
+
+.textspisok2 h2{
+	color:#003366;
+	font-size:50px;
+	line-height:70px;
+	text-align:left;
+}
+
+.textspisok2 p{
+	color:#999999;
+	font-size:20px;
+	padding:10px;
+	text-align:left;
+	line-height:30px;
+}
+
+.textspisok2 ul li{
+	color:#999999;
+	font-size:20px;
+	padding:10px;
+	text-align:left;
+}
+
+/* ##################################################################### */
+
+.conteiner-6{/* ШЕСТОЙ БОЛЬШОЙ БЛОК */
+	padding:20px 120px; 
+	height:100vh; /* блок занимает всю высоту окна браузера */
+	background-color:#F5F5F5;
+	border-radius: 300px 0px 0px 0px; /* закругление, тоже можно взять в конструкторе градиентов */
+}
+
+.conteiner-6 h2{
+	color:#003366;
+	font-size:50px;
+	line-height:70px;
+	text-align:center;
+}
+
+.conteiner-6 p{
+	color:#999999;
+	font-size:20px;
+	/*padding:10px;*/
+	text-align:center;
+	/*line-height:30px;*/
+}
+
+.circletext{/* блок с кругами и текстом */
+	display:flex;
+	align-items:center; /* выравнивание вертикально по центру */
+	justify-content:space-between; /* выравнивание по центру */
+	margin-bottom: 30px;
+}
+
+.krug {
+	display:flex;
+	flex-flow: column wrap;
+	align-items: center; 
+	width:500px;
+	padding:60px;
+	text-align:center;
+}
+
+.krug h3{
+	color:#333333;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:30px;
+}
+
+.krug p{
+	color:#999999;
+	font-size:20px;
+	padding:10px;
+	text-align:center;
+	line-height:30px;
+}
+
+.cruzok {/* сам кружок */
+	border-radius:50%; 
+	border:1px solid #CCCCCC; 
+	background-color:#fff; 
+	width:100px; 
+	height:100px; 
+	box-shadow: 3px 45px 55px -11px rgba(0,0,0,0.75);
+	text-align:center;
+	line-height:100px;
+	color:#003366;
+	font-size:60px;
+}
+
+.wr {
+	height: 120px;
+}
+
